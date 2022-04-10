@@ -1,20 +1,20 @@
 #ifndef __SHARED_DEFINES_H__
 #define __SHARED_DEFINES_H__
 
-#define NUM_QUEUES 32
+#define NUM_QUEUES 128
 
 #define MAX_RMAPS_PER_PAGE 3
 
 #define USE_DIRECT_IO
 #define PAGES_PER_PGFAULT 1 /* 81 is the largest value that works */
 
-#define EVICTOR_THREADS 8
+#define EVICTOR_THREADS 32
 
 #define ETLB_ENTRIES 16
 
 #define MAX_OPEN_FDS 256
 
-#define NUM_FREELISTS 32
+#define NUM_FREELISTS 128
 
 #if 0
 #define DMAP_BGON(x) BUG_ON(x)

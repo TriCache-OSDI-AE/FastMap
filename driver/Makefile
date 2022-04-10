@@ -16,7 +16,7 @@ help:
 	$(MAKE) -C $(KDIR) M=$$PWD help
 
 install:	
-	/lib/modules/`uname -r`/source/scripts/sign-file sha512  /lib/modules/`uname -r`/source/certs/signing_key.pem  /lib/modules/`uname -r`/source/certs/signing_key.x509 dmap.ko
+	#/lib/modules/`uname -r`/source/scripts/sign-file sha512  /lib/modules/`uname -r`/source/certs/signing_key.pem  /lib/modules/`uname -r`/source/certs/signing_key.x509 dmap.ko
 	if [ -f $(NAME).ko ]; then \
 		if ! cp $(NAME).ko /lib/modules/$(KVERSION)/kernel/drivers/char; \
 			then exit 1; fi; \
